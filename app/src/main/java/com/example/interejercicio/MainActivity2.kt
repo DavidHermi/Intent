@@ -1,7 +1,9 @@
 package com.example.interejercicio
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -13,20 +15,25 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-         //var goFirst = findViewById<Button>(R.id.botonSegundo)
-        //goFirst.setOnClickListener {
-          //  val intent = Intent (this, MainActivity::class.java )
-
-            // startActivity(intent)
-
-
 
         val intent = getIntent()
+
         val value = intent.getIntExtra("Provedor", 0 )
 
         val nmroClientes = findViewById<TextView>(R.id.nmroClientes)
 
         nmroClientes.text = value.toString()
+
+        intent.putExtra("saludo", "Hola");
+
+        Log.d("MENSAJES", "actualizado intent")
+
+        setResult(Activity.RESULT_OK, intent);
+
+        Log.d("MENSAJES", "actualizado resultado")
+
+        finish()
+
 
         }
 

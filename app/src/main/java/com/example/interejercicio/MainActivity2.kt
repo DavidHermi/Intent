@@ -24,7 +24,7 @@ class MainActivity2 : AppCompatActivity() {
 
         nmroClientes.text = value.toString()
 
-        intent.putExtra("saludo", "Hola");
+        intent.putExtra("Saludo", "Hola");
 
         Log.d("MENSAJES", "actualizado intent")
 

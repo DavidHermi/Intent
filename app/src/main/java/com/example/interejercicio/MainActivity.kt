@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         when(requestCode) {
             RESULTADO_UNO -> {
                 if (data != null) {
-                    saludo.text = data.getStringExtra("saludo")
+                    saludo.text = data.getStringExtra("Saludo")
                 }; }
             // Other result codes
             else -> {}

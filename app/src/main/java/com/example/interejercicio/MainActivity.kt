@@ -1,9 +1,11 @@
 package com.example.interejercicio
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,6 +37,26 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+    }
+
+
+    @Deprecated("Deprecated in Java")
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        val saludo = findViewById<TextView>(R.id.textoSegundo)
+
+        if(resultCode != Activity.RESULT_OK) return
+        when(requestCode) {
+            RESULTADO_UNO -> {
+                if (data != null) {
+                    saludo.text = data.getStringExtra("saludo")
+                }; }
+            // Other result codes
+            else -> {}
+
+        }
 
     }
+
 }

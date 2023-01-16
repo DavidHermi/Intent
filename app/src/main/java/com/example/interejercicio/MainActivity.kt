@@ -10,8 +10,9 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
 
     // definir el requestCode
-    val RESULTADO_UNO=1
-
+    val RESULTADO_UNO = 1
+    val RESULTADO_DOS = 2
+    val RESULTADO_TRES = 3
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

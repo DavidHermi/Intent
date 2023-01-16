@@ -18,19 +18,18 @@ class MainActivity2 : AppCompatActivity() {
 
         val intent = getIntent()
 
-        val value = intent.getIntExtra("Provedor", 0 )
+        val nro1 = intent.getIntExtra("nro1",0)
+        val nro2 = intent.getIntExtra("nro2",0)
 
-        val nmroClientes = findViewById<TextView>(R.id.nmroClientes)
 
-        nmroClientes.text = value.toString()
-
-        intent.putExtra("Saludo", "Hola");
+        intent.putExtra("suma", nro1 + nro2);
 
         Log.d("MENSAJES", "actualizado intent")
 
         setResult(Activity.RESULT_OK, intent);
 
         Log.d("MENSAJES", "actualizado resultado")
+
 
         finish()
 

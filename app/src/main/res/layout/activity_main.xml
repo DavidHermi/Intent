@@ -7,14 +7,38 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textoPrimero"
+        android:id="@+id/suma1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ir"
+        android:text="Suma 1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/suma2"
+        android:layout_width="16dp"
+        android:layout_height="0dp"
+        android:text="Suma 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/suma3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suma 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
 
     <Button
         android:id="@+id/botonPrimero"
@@ -25,23 +49,9 @@
         android:layout_marginEnd="153dp"
         android:layout_marginBottom="37dp"
         android:text="Boton Primero"
-        app:layout_constraintBottom_toTopOf="@+id/textoPrimero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textoSegundo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="177dp"
-        android:layout_marginBottom="306dp"
-        android:text="Fillo da puta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoPrimero" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
